@@ -33,6 +33,6 @@ def classify(image):
         return "This image is neither or a dog nor of a cat"
 
 
-app = gr.Interface(fn=classify, inputs=gr.Image(shape=(224,224)), outputs="text")
+app = gr.Interface(fn=classify, inputs=gr.Image(shape=(224,224)), outputs="text", title="Image Classification", description="This project showcases image classification (i.e between cats and dogs )using machine learning")
 
 app.launch()
